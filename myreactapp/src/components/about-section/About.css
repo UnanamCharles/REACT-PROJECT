@@ -1,0 +1,53 @@
+#about-section {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+.left-about {
+   width: 50%;
+   height: 75%;
+   background-image: url(../../assets/Gemini_Generated_Image_v6wtwav6wtwav6wt.jpeg);
+   background-size: cover;
+}
+
+.right-about {
+   width: 50%;
+   height: 75%;
+   margin: 1rem;
+   padding-top: 3rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+   #about-section {
+       flex-direction: column; /* Stack sections vertically */
+       align-items: flex-start; /* Align items to the start */
+   }
+
+   .left-about, .right-about {
+       width: 100%; /* Full width for both sections */
+       height: auto; /* Allow height to adjust */
+   }
+
+   .right-about {
+       margin: 0; /* Reset margin for full-width */
+       padding-top: 1rem; /* Adjust padding */
+   }
+}
+
+@media (max-width: 480px) {
+   .right-about h2 {
+       font-size: 1.5rem; /* Adjust heading size */
+   }
+
+   .right-about p {
+       font-size: 0.9rem; /* Adjust paragraph size */
+   }
+
+   .right-about .btn {
+       font-size: 0.8rem; /* Adjust button size */
+       padding: 0.5rem 1rem; /* Adjust button padding */
+   }
+}
